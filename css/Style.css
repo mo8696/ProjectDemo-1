@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.app-container {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+
+    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Lobster', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+    width: 100%;
+    height: 100%;
+    background: #dddddd;
+    ;
+}
+
+
+nav {
+
+    display: grid;
+    grid-template-columns: 2fr 3fr repeat(5, 1fr);
+    width: 100%;
+    background-color: #fff;
+    gap: 20px;
+    padding: 20px;
+
+
+}
+
+
+.col-1 {
+
+    display: flex;
+
+
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    color: #35be35;
+
+}
+
+.search {
+    border: none;
+    background: #f1f1f1;
+    width: 250px;
+    height: 35px;
+    justify-self: center;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.login {
+    /* text-transform: uppercase; */
+    background-image: linear-gradient(-225deg,
+            #141414 0%,
+            #44107a 29%,
+            #23f550 67%,
+            #30302d 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+
+
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+
+
+
+
+
+nav a {
+    text-decoration: none;
+    color: #807a7a;
+    /* display: block; */
+    padding: 10px;
+
+}
+
+
+nav a:hover {
+    border-bottom: 3px solid #35be35;
+    color: #000;
+}
+
+.active a {
+    border-bottom: 3px solid #35be35;
+    color: #000;
+
+}
+
+.cart svg {
+    width: 50px;
+    height: 20px;
+
+}
+
+
+/* **************************end of nav********************************* */
+
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    width: 100%;
+    height: 85vh;
+    background: #fff;
+    margin-top: 15px;
+
+}
+
+
+.hero-image {
+
+    width: 100%;
+
+
+}
+
+
+
+
+.hero-text {
+    align-self: center;
+    padding-left: 30px;
+    line-height: 42px;
+}
+.hero-text p{
+
+    color: #30302d;
+}
+.title {
+    width: fit-content;
+}
+
+
+
+.title span {
+
+    color:#35be35;
+}
+
+.btn{
+   width: 140px;
+   height: 40px;
+   border: 1px solid  #35be35;
+   background: none;
+
+
+}
+
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #807a7a;
+    overflow: hidden;
+    border-right: .15em solid #35be35;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #35be35;
+    }
+}
+
+
+
+
+/* ****************************************************************************** */
+
+
+
+.best-selling{
+
+    width: 100%;
+    height: 85vh;
+    background: transparent;
+    margin-top: 15px;
+    
+    
+}
+
+
+.product-title{
+    background: #fff;
+    width: 100%;
+    height: 15vh;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+
+.card-container{
+    width: 100%;
+    max-height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 2fr  2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+}
+
+.card-1 {
+    
+    background: #fff;
+}
+
+
+.card-detail {
+    padding: 20px;
+    line-height: 40px;
+}
+
+.card-detail small{
+    color: #35be35;
+}
+.card-detail span{
+    font-size: small;
+}
+.ctabtn button{
+    width: 80px;
+    height: 30px;
+    border: 1px solid  #35be35;
+    background: none;
+
+}
+
+.ctabtn .add{
+    background: #35be35;
+}
+
+
+/* **************************************************************************** */
+
+
+.collections{
+    width: 100%;
+    height: 80vh;
+    margin-top: 15px;
+}
