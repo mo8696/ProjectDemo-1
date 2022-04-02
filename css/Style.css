@@ -5,6 +5,14 @@
 
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 .app-container {
     width: 90%;
     margin: auto;
@@ -230,7 +238,8 @@ nav a:hover {
 }
 
 
-.product-title {
+.product-title,
+.review-title {
     background: #fff;
     width: 100%;
     height: 15vh;
@@ -291,6 +300,7 @@ nav a:hover {
 
 .ctabtn .add {
     background: #35be35;
+    color: #fff;
 }
 
 
@@ -385,6 +395,175 @@ h3{
 .reviews{
 
     width: 100%;
-    height: 75vh;
+    height: fit-content;
     background: transparent;
+    margin-top: 15px;
 }
+
+
+.review-container{
+
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: #fff;
+}
+
+
+.dots,
+.left-aw,
+.right-aw{
+    position: absolute;
+}
+
+
+.left-aw{
+
+    font-size: 55px;
+    color: #35be35;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 2222;
+}
+
+
+.right-aw{
+
+    font-size: 55px;
+    color: #35be35;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 22222;
+}
+
+.dots{
+     display: flex;
+     width: 60px;
+     justify-content: space-between;
+     bottom: 10%;
+     left: 50%;
+     z-index: 222222;
+    
+}
+
+
+.dots div{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #35be35;
+    border-radius: 50%;
+}
+
+
+
+.slide-review{
+    position: absolute;
+    width: 60%;
+    height: fit-content;
+    top: 30%;
+    right: 20%;
+
+}
+
+.review-img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+.stars{
+    width: 80px;
+    margin: auto;
+    color: #35be35;
+    margin-top: 15px;
+}
+
+.slide-review p{
+    margin-top: 20px;
+    line-height: 33px;
+    text-align: center;
+}
+
+
+
+
+
+/* *****************************************************8 */
+
+
+
+.footer{
+
+    width: 100%;
+    height: fit-content;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.footer-m{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-self: center;
+    border-bottom: 1px solid #35be35;
+}
+
+
+.footer-menu{
+    padding: 20px;
+    color: #141414;
+    line-height: 42px;
+    justify-self: center;
+}
+
+.footer-menu ul li a{
+    color: #141414;
+}
+
+
+.icons{
+    padding: 20px;
+    justify-self: center;
+    color: #35be35;
+}
+
+
+.news{
+    padding: 20px;
+    justify-self: center;
+
+}
+
+.news input{
+    width: 200px;
+    height: 30px;
+    color: #30302d;
+    border: none;
+    background: #dddddd;
+    padding: 10px;
+}
+
+
+.footer .copy{
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.copy i{
+    color: #23f550;
+}
+
+
+
+
+
+
